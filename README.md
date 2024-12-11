@@ -6,7 +6,7 @@ Project just to show random colors. Maybe will add random numbers
 
 - [x] Add color generator directive
 - [x] Add color generator service
-- [ ] Add buttom to generate color not only on loading
+- [x] Add buttom to generate color not only on loading
 - [x] Add styles for entrance page
 - [x] Add custom font styles
 - [ ] Add test for service
@@ -14,3 +14,5 @@ Project just to show random colors. Maybe will add random numbers
 ## Goot to have
 - [ ] Add routing for random number
 - [ ] Add service for random number
+
+![Screen](./screen.png)

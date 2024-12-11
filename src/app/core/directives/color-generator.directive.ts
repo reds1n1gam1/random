@@ -14,7 +14,10 @@ export class ColorGeneratorDirective implements OnInit {
 
   public ngOnInit(): void {
     this.randomColor = '#' + this.randomColorServices.getRandomColor();
+  }
 
+  public generateColor(): void { 
+    this.randomColor = '#' + this.randomColorServices.getRandomColor();
   }
 
 }
