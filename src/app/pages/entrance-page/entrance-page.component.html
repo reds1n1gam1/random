@@ -3,5 +3,6 @@
         <p class="entrance-page__color">
             {{ color.randomColor }}</p>
         <button class="entrance-page__button" (click)="color.generateColor()">Generate color</button>
+        <button class="entrance-page__button" (click)="copyToClipboard(color.randomColor)">Copy to clipboard</button>
     </div>
 </div>

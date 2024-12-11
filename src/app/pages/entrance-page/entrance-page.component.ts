@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { DirectivesModule } from 'src/app/core/directives/directive.module';
 
 @Component({
@@ -10,4 +10,8 @@ import { DirectivesModule } from 'src/app/core/directives/directive.module';
     DirectivesModule,
   ]
 })
-export class EntrancePageComponent { }
+export class EntrancePageComponent {
+  public copyToClipboard(color: string = ''): void {
+    navigator.clipboard.writeText(color);
+  }
+}

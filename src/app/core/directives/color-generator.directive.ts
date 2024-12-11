@@ -10,7 +10,7 @@ export class ColorGeneratorDirective implements OnInit {
   private cdr = inject(ChangeDetectorRef)
   private randomColorServices = inject(RandomColorService);
 
-  public randomColor?: string;
+  public randomColor: string = '';
 
   public ngOnInit(): void {
     this.randomColor = '#' + this.randomColorServices.getRandomColor();

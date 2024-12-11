@@ -9,6 +9,7 @@ Project just to show random colors. Maybe will add random numbers
 - [x] Add buttom to generate color not only on loading
 - [x] Add styles for entrance page
 - [x] Add custom font styles
+- [x] Add copy to clipboard on click
 - [ ] Add test for service
 
 ## Goot to have
