@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ColorGeneratorDirective } from 'src/app/core/directives/color-generator.directive';
+import { DirectivesModule } from 'src/app/core/directives/directive.module';
 
 @Component({
   selector: 'app-entrance-page',
   templateUrl: './entrance-page.component.html',
-  styleUrls: ['./entrance-page.component.css'],
-  hostDirectives: [
-    { directive: ColorGeneratorDirective },]
+  styleUrls: ['./entrance-page.component.scss'],
+  standalone: true,
+  imports: [
+    DirectivesModule,
+  ]
 })
 export class EntrancePageComponent { }

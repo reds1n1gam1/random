@@ -3,16 +3,18 @@ import { RandomColorService } from '../services/random-color.service';
 
 @Directive({
   selector: '[appColorGenerator]',
-  standalone: true,
+  exportAs: 'colorGenerator'
 })
 export class ColorGeneratorDirective implements OnInit {
   private el = inject(ElementRef)
   private cdr = inject(ChangeDetectorRef)
   private randomColorServices = inject(RandomColorService);
 
+  public randomColor?: string;
+
   public ngOnInit(): void {
-    this.el.nativeElement.innerHTML = this.randomColorServices.getRandomColor();
-    this.cdr.detectChanges();
+    this.randomColor = '#' + this.randomColorServices.getRandomColor();
+
   }
 
 }
