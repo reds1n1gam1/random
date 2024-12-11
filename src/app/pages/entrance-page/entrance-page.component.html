@@ -1,3 +1,7 @@
 <div class="entrance-page" appColorGenerator #color="colorGenerator" [style]=" '--basic-color:' + color.randomColor ">
-    <div class="entrance-page__content"> {{ color.randomColor }} </div>
+    <div class="entrance-page__card">
+        <p class="entrance-page__color">
+            {{ color.randomColor }}</p>
+        <button class="entrance-page__button">Generate color</button>
+    </div>
 </div>
